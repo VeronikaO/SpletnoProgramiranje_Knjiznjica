@@ -1,0 +1,92 @@
+body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    /* background-color: dimgrey; */
+    color: #696969;
+    padding: 3px;
+    padding-top: 150px;
+    padding-left:  15%;
+    padding-right: 15%;
+    padding-bottom: 150px;
+    background-image: url("../imgs/light-wood-pattern.jpg");
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: white;
+}
+
+ /* vh viewport height, vw viewport width */
+#main{
+    float: left;
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+    height: 100%;
+    width: 100%;
+}
+
+#koncna {
+    float: left;
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    height: 100%;
+    border-bottom: 1px solid #cccccc;
+}
+
+#vmesna {
+    float: left;
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    height: 100%;
+}
+
+#nav01 {
+    position: fixed;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+   /* background-color: #cccccc; opacity: 0.8; */
+}
+
+h1 {
+    font-family: Georgia, serif;
+    border-bottom: 1px solid #cccccc;
+    color: #404040;
+    font-size: 30px;
+}
+
+ul#menu {
+    padding-left: 15.5%;
+    margin-bottom: 11px;
+}
+
+ul#menu li {
+    display: inline;
+    margin-right: 3px;
+}
+
+ul#menu li a {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #696969;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    color: #0d0d0d;
+    background-color: #f2f2f2;
+}
