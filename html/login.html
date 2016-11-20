@@ -14,76 +14,67 @@
 
 
 <div id="main">
-  <table id="login_table" style="width:100%">
-    <tr>
-      <td id="login" style="width:50%">
-        <h1>Login</h1>
-        <div id="lusername" class="Container">
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="luname" required>
+      <div class="login_div" id="login" style="width:50%">
+        <div class="login">
+          <h1>Login</h1>
+          <form method="POST">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="luname" required>
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="lpsw" required>
+                <button type="submit">Login</button>
+                <input type="checkbox" checked="checked"> Remember me
+          </form>
         </div>
-        <div id="lpasword" class="Container">
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="lpsw" required>
-        </div>
-        <div>
-            <button type="submit">Login</button>
-            <input type="checkbox" checked="checked"> Remember me
-        </div>
-      </td>
+      </div>
 
 
-      <td id="register" style="width:50%">
-        <h1>Register</h1>
-        <div id="username" class="Container">
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+      <div class="register_div" id="register" style="width:50%">
+          <div class="register">
+          <h1>Register</h1>
+            <form method="POST">
+              <label><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <label><b>Confirm Password</b></label>
+              <input type="confirm_password" placeholder="Reenter Password" name="cpsw" required>
+
+              <label><b>Name</b></label>
+              <input type="name" placeholder="Enter Name" name="name" required>
+
+              <label><b>Last name</b></label>
+              <input type="surname" placeholder="Enter Last name" name="surname" required>
+
+              <label><b>E-mail</b></label>
+              <input type="email" placeholder="Enter E-mail" name="email" required>
+
+              <label><b>Adress</b></label>
+              <input type="address" placeholder="Enter Address" name="address" required>
+
+              <label><b>City</b></label>
+              <input type="city" placeholder="Enter City" name="city" required>
+
+              <label><b>Zip code</b></label>
+              <input type="zip" placeholder="Enter Zip code" name="zip" required>
+
+              <label><b>Phone number</b></label>
+              <input type="phone" placeholder="Enter Phone number" name="phone" required>
+
+              <button type="submit">Login</button>
+          </form>
         </div>
-        <div id="pasword" class="Container">
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-        </div>
-        <div id="confirm_pasword" class="Container">
-            <label><b>Confirm Password</b></label>
-            <input type="confirm_password" placeholder="Reenter Password" name="cpsw" required>
-        </div>
-        <div id="name" class="Container">
-            <label><b>Name</b></label>
-            <input type="name" placeholder="Enter Name" name="name" required>
-        </div>
-        <div id="surname" class="Container">
-            <label><b>Last name</b></label>
-            <input type="surname" placeholder="Enter Last name" name="surname" required>
-        </div>
-        <div id="email" class="Container">
-            <label><b>E-mail</b></label>
-            <input type="email" placeholder="Enter E-mail" name="email" required>
-        </div>
-        <div id="address" class="Container">
-            <label><b>Adress</b></label>
-            <input type="address" placeholder="Enter Address" name="address" required>
-        </div>
-        <div id="city" class="Container">
-            <label><b>City</b></label>
-            <input type="city" placeholder="Enter City" name="city" required>
-        </div>
-        <div id="zip" class="Container">
-            <label><b>Zip code</b></label>
-            <input type="zip" placeholder="Enter Zip code" name="zip" required>
-        </div>
-        <div id="phone" class="Container">
-            <label><b>Phone number</b></label>
-            <input type="phone" placeholder="Enter Phone number" name="phone" required>
-        </div>
-        <div>
-            <button type="submit">Login</button>
-        </div>
-      </td>
-    </tr>
-  </table>
+      </div>
 </div>
 
 <script src="../javascript/script.js"></script>
-
+<footer>
+  <div class="footer_cont">
+    <a href="">Legal</a>
+    <a href="">About</a>
+  </div>
+</footer>
 </body>
 </html>

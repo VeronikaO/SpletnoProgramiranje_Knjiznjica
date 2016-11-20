@@ -20,6 +20,35 @@ header{
   background-color: white;
 }
 
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: white;
+}
+
+.footer_cont{
+  width: 220px;
+  margin-left:auto;
+	margin-right:auto;
+}
+
+.header_link{
+  float:right;
+  clear:right;
+}
+
+.login_div{
+  width:50%;
+  float:left;
+}
+
+.register_div{
+  width:50%;
+  float:left;
+}
  /* vh viewport height, vw viewport width */
 #main{
     float: left;
@@ -61,6 +90,25 @@ header{
    /* background-color: #cccccc; opacity: 0.8; */
 }
 
+.login form{
+  width:100%;
+	display:flex;
+	flex-flow:column;
+}
+
+.register form{
+  width:100%;
+	display:flex;
+	flex-flow:column;
+}
+
+.book{
+  width:50%;
+  float:left;
+  display:flex;
+	flex-flow:column;
+}
+
 h1 {
     font-family: Georgia, serif;
     border-bottom: 1px solid #cccccc;
@@ -89,4 +137,50 @@ ul#menu li a {
 ul#menu li a:hover {
     color: #0d0d0d;
     background-color: #f2f2f2;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  font-size: 15px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #696969;
+  border-radius: 4px 4px 0 0;
+  border:none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f2f2f2}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+   background-color: #f2f2f2;
 }

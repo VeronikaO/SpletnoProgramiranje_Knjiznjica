@@ -14,38 +14,35 @@
 
 
 <div id="main">
-  <table id="checkout_book" style="width:100%">
-    <tr>
-      <td id="checkout_right_book" style="width:30%">
+  <div class="book" id="checkout_right_book">
 
-        <div id="book-pic">
-          <img src="../imgs/book.jpg">
-        </div>
+    <div id="book-pic">
+     <img src="../imgs/book.jpg">
+    </div>
 
-        <div id="checkout_user_info">
-          tukaj se izpišejo podatki o uporabniku
-        </div>
-
-      </td>
-      <td id="checkout_left_book" style="width:70%">
-        <div id="checkout_book_description">
-          THE SHOW MUST GO ON, AS MURDER, MUSIC AND MAYHEM RUN RIOT IN THE NIGHT...
-          The Opera House, Ankh-Morpork...A huge, rambling building, where innocent young sopranos are lured to their destiny by a strangely familiar evil mastermind in a
-          hideously deformed evening dress...At least, he hopes so. But Granny Weatherwax, Discworld's most famous witch, is in the audience. And she doesn't hold with that
-           sort of thing. So there's going to be trouble (but nevertheless a good evening's entertainment with murders you can really hum...)
-        </div>
-        <div id="checkout_button">
-          <form action="">
-            <input type="submit" value="Finish order" />
-          </form>
-        </div>
-      </td>
-    </tr>
-  </table>
-
+    <div id="checkout_user_info">
+      tukaj se izpišejo podatki o uporabniku
+    </div>
+  </div>
+  <div class="book" id="checkout_book_description">
+    THE SHOW MUST GO ON, AS MURDER, MUSIC AND MAYHEM RUN RIOT IN THE NIGHT...
+    The Opera House, Ankh-Morpork...A huge, rambling building, where innocent young sopranos are lured to their destiny by a strangely familiar evil mastermind in a
+    hideously deformed evening dress...At least, he hopes so. But Granny Weatherwax, Discworld's most famous witch, is in the audience. And she doesn't hold with that
+    sort of thing. So there's going to be trouble (but nevertheless a good evening's entertainment with murders you can really hum...)
+  </div>
+  <div class="checkout_button" id="checkout_button">
+    <form method="POST" action="">
+      <input type="submit" value="Finish order" />
+    </form>
+  </div>
 </div>
 
 <script src="../javascript/script.js"></script>
-
+<footer>
+  <div class="footer_cont">
+    <a href="">Legal</a>
+    <a href="">About</a>
+  </div>
+</footer>
 </body>
 </html>
