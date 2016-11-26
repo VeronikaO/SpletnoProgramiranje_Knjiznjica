@@ -2,27 +2,31 @@
 
 <html>
 <head>
-  <title>Landing</title>
+  <title>Book page</title>
   <link href="../css/style.css" rel="stylesheet">
   <meta charset="UTF-8">
 </head>
 
 <body>
 <header>
-   <a id="logo" href="/index.html"><img src="../imgs/library.jpg" alt="logo" style="height:100px;width:250px:float:left"/></a>
-  <div class="header_link"> <a href="login.html">Login / Register </a></div>
+   <a id="logo" href="../index.html"><img src="../imgs/library.jpg" alt="logo" style="height:100px;width:250px:float:left"/></a>
+  <div class="header_link">
+    <a href="login.html">Login / Register </a>
+    &nbsp;
+    <a href="wishlist.html">Wishlist</a>
+  </div>
    <nav id="nav01"></nav>
 </header>
 
 
-<div id="main">
-      <div class="book" id="right_book">
+<div class="main">
+      <div class="book">
 
-        <div id="book-pic">
-          <img src="../imgs/book.jpg">
+        <div>
+          <img src="../imgs/maskerade_discworld.jpg">
         </div>
 
-        <div id="book_buttons">
+        <div class="book_buttons">
           <form action="">
             <input type="submit" value="Check availability" />
           </form>
@@ -35,12 +39,13 @@
         </div>
 
       </div>
-      <div class="book" id="left_book">
-        <div id="book_description">
-          THE SHOW MUST GO ON, AS MURDER, MUSIC AND MAYHEM RUN RIOT IN THE NIGHT...
+      <div class="book" >
+        <div>
+          <p>THE SHOW MUST GO ON, AS MURDER, MUSIC AND MAYHEM RUN RIOT IN THE NIGHT...
           The Opera House, Ankh-Morpork...A huge, rambling building, where innocent young sopranos are lured to their destiny by a strangely familiar evil mastermind in a
           hideously deformed evening dress...At least, he hopes so. But Granny Weatherwax, Discworld's most famous witch, is in the audience. And she doesn't hold with that
            sort of thing. So there's going to be trouble (but nevertheless a good evening's entertainment with murders you can really hum...)
+         </p>
         </div>
       </div>
 </div>
@@ -48,8 +53,9 @@
 <script src="../javascript/script.js"></script>
 <footer>
   <div class="footer_cont">
-    <a href="">Legal</a>
-    <a href="">About</a>
+    <a href="legal.html">Legal</a>
+    <a href="about.html">About</a>
+    <a href="sitemap.html">Sitemap</a>
   </div>
 </footer>
 </body>

@@ -40,6 +40,12 @@ footer{
   clear:right;
 }
 
+.book_buttons form{
+  width: 150px;
+	display:flex;
+	flex-flow:column;
+}
+
 .login_div{
   width:50%;
   float:left;
@@ -49,35 +55,17 @@ footer{
   width:50%;
   float:left;
 }
- /* vh viewport height, vw viewport width */
-#main{
+
+.main{
     float: left;
     padding: 5px;
     padding-left:  15px;
     padding-right: 15px;
+    margin-top: 15px;
     background-color: #ffffff;
     border-radius: 0 0 5px 5px;
     height: 100%;
     width: 100%;
-}
-
-#koncna {
-    float: left;
-    padding: 5px;
-    padding-left:  15px;
-    padding-right: 15px;
-    background-color: #ffffff;
-    height: 100%;
-    border-bottom: 1px solid #cccccc;
-}
-
-#vmesna {
-    float: left;
-    padding: 5px;
-    padding-left:  15px;
-    padding-right: 15px;
-    background-color: #ffffff;
-    height: 100%;
 }
 
 #nav01 {
@@ -85,9 +73,20 @@ footer{
     left: 0;
     z-index: 9999;
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: white;
    /* background-color: #cccccc; opacity: 0.8; */
+}
+
+.book_list{
+  height: 10%;
+  float: left;
+  display:flex;
+	flex-flow:row;
+}
+
+.book_list a img{
+  max-height: 180px;
 }
 
 .login form{
