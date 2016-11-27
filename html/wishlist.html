@@ -7,29 +7,21 @@
   <meta charset="UTF-8">
 </head>
 
-<body>
-<header>  <a id="logo" href="../index.html"><img src="../imgs/library.jpg" alt="logo" style="height:100px;width:250px:float:left"/></a>
+<body onload="create_wishlist_page()">
+<header>  <a id="logo" href="main.html"><img src="../imgs/library.jpg" alt="logo" style="height:100px;width:250px:float:left"/></a>
   <div class="header_link">
-    <a href="login.html">Login / Register </a>
-    &nbsp;
     <a href="wishlist.html">Wishlist</a>
   </div>
   <nav id="nav01"></nav>
 </header>
 
 
-<div class="main">
-  <div class="book_list">
-    <a class="book_list" href="book.html"><img src="../imgs/maskerade_discworld.jpg" alt="book"/></a>
-    <p class="book_list" >THE SHOW MUST GO ON, AS MURDER, MUSIC AND MAYHEM RUN RIOT IN THE NIGHT...
-    The Opera House, Ankh-Morpork...A huge, rambling building, where innocent young sopranos are lured to their destiny by a strangely familiar evil mastermind in a
-    hideously deformed evening dress...At least, he hopes so. But Granny Weatherwax, Discworld's most famous witch, is in the audience. And she doesn't hold with that
-     sort of thing. So there's going to be trouble (but nevertheless a good evening's entertainment with murders you can really hum...)</p>
-  </div>
-
-</div>
+<div class="main" id="wishlist_main"></div>
 
 <script src="../javascript/script.js"></script>
+<script src="../javascript/books.js"></script>
+<script src="../javascript/users.js"></script>
+<script src="../javascript/wishlist.js"></script>
 <footer>
   <div class="footer_cont">
     <a href="legal.html">Legal</a>

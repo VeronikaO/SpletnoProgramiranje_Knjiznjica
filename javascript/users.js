@@ -1,11 +1,15 @@
-var admins = [
+var users = [
     {
       "username":"Oni",
-      "password":"passwd"
+      "password":"passwd",
+      "name":"Bla",
+      "surname":"Novak",
+      "address":"Nekje dalec",
+      "city":"Novo mesto",
+      "zip":"7000",
+      "phone":"041-041-041",
+      "email":"email2@gmail.com"
     },
-];
-
-var users = [
     {
       "username":"book_luvr",
       "password":"books<3",

@@ -2,26 +2,21 @@
 
 <html>
 <head>
-  <title>Checkout</title>
+  <title>Library</title>
   <link href="../css/style.css" rel="stylesheet">
   <meta charset="UTF-8">
 </head>
 
-<body onload="create_checkout_page()">
+<body onload="create_book_div()">
 <header>  <a id="logo" href="main.html"><img src="../imgs/library.jpg" alt="logo" style="height:100px;width:250px:float:left"/></a>
+  <div class="header_link">
+    <a href="wishlist.html">Wishlist</a>
+  </div>
   <nav id="nav01"></nav>
 </header>
 
 
-<div class="main">
-  <div class="book" id="checkout_book"></div>
-  <div id="checkout_user_info"></div>
-  <div class="checkout_button" id="checkout_button">
-    <form method="POST" action="main.html">
-      <input type="submit" value="Finish order" />
-    </form>
-  </div>
-</div>
+<div id="main" class="main"></div>
 
 <script src="../javascript/script.js"></script>
 <script src="../javascript/books.js"></script>
