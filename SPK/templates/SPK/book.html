@@ -1,0 +1,29 @@
+{% extends "SPK/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<div class="main">
+  <div id="book_main">
+    {% if book_obj %}
+        <div class="book">
+            <img src="{% static 'SPK/'|add:book_obj.picture %}"/>
+            <p> {{ book_obj.description }} </p>
+        </div>
+    {% endif %}
+ </div>
+
+  <div class="book_buttons">
+  {% if book_obj %}
+        <form name="book_page_wishlist" method="get" action="/SPK/Wishlist/">
+        {% csrf_token %}  
+        <input type="submit" value="Wishlist"/>
+        </form>
+        <form method="get" action="/SPK/Checkout/">
+        {% csrf_token %}  
+        <input type="submit" value="Borrow"/>
+        </form> 
+  {% endif %}
+  </div>
+{% endblock %}
+

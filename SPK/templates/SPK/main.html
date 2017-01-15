@@ -1,0 +1,19 @@
+{% extends "SPK/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<div id="main" class="main">
+{% if books_list %}
+    {% for book in books_list %}
+        {% if book.date != 'NA' %}
+            <div class="book_list">
+                <a id="img" href="/SPK/{{ book.title }}/"><img src="{% static 'SPK/'|add:book.picture %}"/></a>
+                <p> {{ book.description }} </p>
+            </div>
+         {% endif %}   
+    {% endfor %}
+{% endif %}
+</div>
+{% endblock %}
+

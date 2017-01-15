@@ -1,0 +1,17 @@
+{% extends "SPK/base.html" %}
+{% load static %}
+{% load i18n %}
+
+
+{% block content %}
+<div class="main">
+  <div class="book" id="checkout_book"></div>
+  <div id="checkout_user_info"></div>
+  <div class="checkout_button" id="checkout_button">
+    <form method="POST" action="/SPK/main/">
+      <input type="submit" value="Finish order" />
+    </form>
+  </div>
+</div>
+{% endblock %}
+

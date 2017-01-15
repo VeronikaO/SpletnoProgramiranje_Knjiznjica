@@ -1,0 +1,54 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Login</title>
+  <link href="{% static 'SPK/style.css' %}" rel="stylesheet">
+  <script src="script.js"></script>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+<header>
+  <img src="{% static 'SPK/library.jpg' %}" alt="logo" style="height:100px;width:250px:float:left"/>
+</header>
+
+
+<div class="main">
+
+      <div class="login_div" style="width:50%">
+        <div class="login">
+          <h1>Login</h1>
+          
+          <form method='POST' action='main/'>
+                {% csrf_token %}
+                {{ loginForm.as_table }}
+                 <input type="submit" value="Login" />
+            </form>
+          
+        </div>
+      </div>
+
+
+      <div class="register_div" style="width:50%">
+          <div class="register">
+          <h1>Register</h1>
+            <form method='POST' action='main/'>
+                {% csrf_token %}
+                {{ registerForm.as_table }}
+                 <input type="submit" value="Register" />
+            </form>
+        </div>
+      </div>
+</div>
+
+
+<footer>
+  <div class="footer_cont">
+  </div>
+</footer>
+</body>
+</html>

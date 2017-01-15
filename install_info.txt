@@ -1,0 +1,17 @@
+#installation guide 
+#if you dont have django installed follow these steps:
+#run to install virtual enviorment
+
+pip install virtualenv
+
+#download Django source and install it in virtualenv
+
+git clone git@github.com:YourGitHubName/django.git
+mkdir ~/.virtualenvs
+python3 -m venv ~/.virtualenvs/djangodev
+
+#when you are done run these commands to get your server up and running
+
+source ~/.virtualenvs/djangodev/bin/activate
+python manage.py runserver
+

@@ -1,0 +1,27 @@
+{% extends "SPK/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<div id="main" class="main">
+{% if books_filter %}
+    {% for book in books_filter %}
+        {% if book.date != 'NA' %}
+            {% if book.genre1 != genre %}
+                <div class="book_list">
+                    <a id="img" href="/SPK/{{ book.title }}/"><img src="{% static 'SPK/'|add:book.picture %}"/></a>
+                    <p> {{ book.description }} </p>
+                </div>
+            {% endif %}
+            {% if book.genre2 != genre %}
+                <div class="book_list">
+                    <a id="img" href="/SPK/{{ book.title }}/"><img src="{% static 'SPK/'|add:book.picture %}"/></a>
+                    <p> {{ book.description }} </p>
+                </div>
+            {% endif %}
+         {% endif %}   
+    {% endfor %}
+{% endif %}
+</div>
+
+{% endblock %}

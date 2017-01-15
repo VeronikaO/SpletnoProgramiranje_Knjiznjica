@@ -1,0 +1,53 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>SPK Library</title>
+  <link href="{% static 'SPK/style.css' %}" rel="stylesheet">
+  <meta charset="UTF-8">
+</head>
+<body>
+<header>  <a id="logo" href="/SPK/main"><img src="{% static 'SPK/library.jpg' %}" alt="logo" style="height:100px;width:250px:float:left"/></a>
+
+  <div class="header_link">
+    <a href="wishlist.html">Wishlist</a>
+    {% if user.is_authenticated %}
+        {% blocktrans %}Logged in as {{ user }}{% endblocktrans %}
+        <a href="{% url 'logout' %}">Logout</a>
+    {% else %}
+        <a href="{% url 'index' %}">Login</a>
+    {% endif %}  
+  </div>
+
+  <nav id="nav01">
+    <ul id='menu'>
+        <li><div class="dropdown">
+            <button class="dropbtn">Categories</button>
+                <div class="dropdown-content">
+                <a href="/SPK/main/Fantasy">Fantasy</a>
+                <a href="/SPK/main/Sci-fi">Sci-fi</a>
+                <a href="/SPK/main/Comedy">Comedy</a>
+            </div>
+        </div></li>
+        <li><a href="/SPK/main/Coming_soon">Coming soon</a></li>
+        <li><input id="my_search" type="search" placeholder="Search"></input></li>
+        <li><button type="submit" onclick="return search_function()">Search</button></li>
+    </ul>
+  </nav>
+</header>
+
+{% block content %}
+{% endblock %}
+
+</body>
+<footer>
+  <div class="footer_cont">
+    <a href="/SPK/Legal">Legal</a>
+    <a href="/SPK/About">About</a>
+    <a href="/SPK/Sitemap">Sitemap</a>
+  </div>
+</footer>
+</body>
+</html>
